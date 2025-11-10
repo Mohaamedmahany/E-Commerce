@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./pages/Hero.jsx";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
@@ -16,9 +16,8 @@ import ChekOut from "./pages/ChekOut.jsx";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/E-Commerce">
+    <HashRouter>
       <ToastContainer position="top-center" autoClose={2000} />
-
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/Login" element={<Login />} />
@@ -31,7 +30,7 @@ const App = () => {
         <Route path="/Cart" element={<Cart />} />
         <Route path="/ChekOut" element={<ChekOut />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
