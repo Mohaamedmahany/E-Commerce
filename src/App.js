@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/Navbar.jsx";
 import Hero from "./pages/Hero.jsx";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
-import ProductAll from "./ProductAll";
 import Header from "../components/Navbar";
 
 const ProductDetils = () => {
