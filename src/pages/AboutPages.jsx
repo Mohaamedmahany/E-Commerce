@@ -1,0 +1,74 @@
+import React from 'react'
+import { Card, Col, Row } from 'react-bootstrap'
+import Footer from '../components/Footer'
+import Header from '../components/Navbar'
+import menImg from '../assets/man.jpg';
+import womenImg from '../assets/woman2020.jpg';
+import jewelImg from '../assets/Diamond.jpg';
+import electronicsImg from '../assets/electric.webp';
+const AboutPages = () => {
+  return (
+    <>
+    <Header/>
+    <div style={{ paddingTop: "70px" }} className=' container  ' >
+        <h2  className=' text-center mt-5 fs-1 fw-bold'>About Us</h2>
+        <hr className='mb-4 ' />
+        <p  className=' text-center fs- lh-lg'>Welcome to our world! 
+At E-commerce, we’re here to make your online shopping experience easier, faster, and more fun than ever. You’ll find everything you need in one place — from trendy clothes that match every style, to stylish accessories, and the latest electronics that make life simpler. We’re not just another online store; we’re a community that values style, quality, and comfort.
+
+Our mission is simple — to let you shop with confidence. Every product is carefully selected to guarantee top quality and great value. Enjoy 100% secure payments, fast delivery right to your door, and a friendly support team that’s always ready to help whenever you need it.
+
+We believe shopping isn’t just about buying things — it’s an experience that reflects your taste and personality. That’s why we’re constantly updating our collections, adding new products, and bringing you the best deals all year round.
+
+Try it yourself and enjoy the online shopping experience you truly deserve</p>
+
+        <h2 className=' text-center mb-4 mt-5 fs-1 fw-bold' >
+          Our Products
+          <hr className=' mt-3  pb-4' style={{width : "500px" , margin: "auto"  }}/>
+          </h2>
+     
+        <Row className="g-4 justify-content-center">
+          <Col xs={12} sm={6} md={4} lg={3}>
+            <Card className="text-center shadow-lg" style={{ width: '100%' }}>
+              <Card.Img variant="top" src={menImg} style={{ height: "250px", objectFit: "cover" }} />
+              <Card.Body>
+                <Card.Title className="fw-bold">Men's Clothing</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col xs={12} sm={6} md={4} lg={3}>
+            <Card className="text-center shadow-lg" style={{ width: '100%' }}>
+              <Card.Img variant="top"  src={womenImg} style={{ height: "250px", objectFit: "cover" }} />
+              <Card.Body>
+                <Card.Title className="fw-bold">Women's Clothing</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col xs={12} sm={6} md={4} lg={3}>
+            <Card className="text-center shadow-lg" style={{ width: '100%' }}>
+              <Card.Img variant="top" src={jewelImg} style={{ height: "250px", objectFit: "cover" }} />
+              <Card.Body>
+                <Card.Title className="fw-bold">Jewelery</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col xs={12} sm={6} md={4} lg={3}>
+            <Card className="text-center shadow-lg" style={{ width: '100%' }}>
+              <Card.Img variant="top" src={electronicsImg} style={{ height: "250px", objectFit: "cover" }} />
+              <Card.Body>
+                <Card.Title className="fw-bold">Electronics</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+export default AboutPages
